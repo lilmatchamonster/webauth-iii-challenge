@@ -9,7 +9,7 @@ router.get('/', restricted, (req, res) => {
       res.status(200).json(users);
     })
     .catch(error => {
-      res.send(err);
+      res.send(error);
     })
 })
 
